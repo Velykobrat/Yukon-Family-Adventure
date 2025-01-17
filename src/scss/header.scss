@@ -4,9 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  flex-shrink: 0;
+  min-width: 320px;
   height: 64px;
-  background-color: $_background_color;
+  padding: 0px 16px;
+  background: $_die_color;
   color: $_white;
   position: fixed;
   top: 0;
