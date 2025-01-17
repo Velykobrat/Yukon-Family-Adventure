@@ -15,14 +15,16 @@
 
 html {
   scroll-behavior: smooth;
-  // max-width: 1200px;
-  margin: 0 auto; /* Центруємо контейнер */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 :root {
-  --font-family: 'Signika Negative', sans-serif;
-  --second-family: 'Norican', sans-serif;
-  --third-family: 'Inter', sans-serif;
+  --font-family: 'Roboto Flex', sans-serif;
+  --second-family: 'Rubik One', sans-serif;
+  --third-family: 'Rubik', sans-serif;
+  --font3: 'Inter', sans-serif;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -38,15 +40,15 @@ html {
 }
 
 section {
-  scroll-margin-top: 66px; /* Встановлюємо значення, яке відповідає висоті нашого хедера */
+  scroll-margin-top: 60px; /* Встановлюємо значення, яке відповідає висоті нашого хедера */
 }
 
 h1 {
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 36px;
+  font-family: 'Rubik One';
+  font-size: 40px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 44.35px;
-  text-align: center;
+  line-height: 110%; /* 66px */
 }
 
 h2 {

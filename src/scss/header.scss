@@ -1,13 +1,45 @@
+@import './common/vars.scss';
+
 .header {
   display: flex;
-  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 64px;
+  background-color: $_background_color;
+  color: $_white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
+/* Логотип */
 .header-logo {
-  height: 60px;
-  width: 60px;
+  height: 32px;
+  width: 32px;
+  opacity: 100%;
+  border-radius: 4px;
 }
 
-.header-nav-list {
+/* Бургер-меню */
+.burger-menu {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 18px;
+  width: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: $_white;
+  border-radius: 1px;
 }

@@ -1,0 +1,23 @@
+@import './common/vars.scss';
+
+.home-section {
+  position: relative;
+  height: 568px;
+  width: 100%;
+  background-color: $_background_color;
+  background-image: url('../img/home/Background image 1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Контейнер для зображення між текстом та кнопкою */
+.image-between-text-and-button img {
+  width: 284px;
+  height: 294px;
+  object-fit: cover; /* Зберігаємо пропорції картинки */
+  border-radius: 10px; /* Округлі кути */
+  display: block; /* Виправляє проблему з зайвим простором */
+  background-color: transparent; /* Прозорий фон для картинки */
+  box-shadow: none; /* Прибираємо можливі тіні */
+}
