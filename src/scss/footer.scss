@@ -1,0 +1,67 @@
+/* Загальний стиль футера */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background: var(--Die-color, #212835);
+  gap: 8px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  align-self: stretch;
+  border: 1px solid var(--Die-color-dark-theme, rgba(255, 255, 255, 0.08));
+  opacity: 0.35;
+  margin-bottom: 8px; /* Відступ до footer-container */
+}
+
+/* Контейнер */
+.footer-container {
+  display: flex;
+  width: 288px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Список навігації */
+.footer-nav {
+  width: 100%;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column; /* Список у колонку */
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-nav-item {
+  text-align: left;
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 20px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/* Текстові блоки */
+.footer-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  text-align: left;
+}

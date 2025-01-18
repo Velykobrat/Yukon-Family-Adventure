@@ -2,13 +2,13 @@
 
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
   min-width: 320px;
   height: 64px;
   padding: 0px 16px;
-  background: $_die_color;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background: var(--Die-color-dark-theme, rgba(255, 255, 255, 0.08));
   color: $_white;
   position: fixed;
   top: 0;

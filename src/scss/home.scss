@@ -5,12 +5,17 @@
   position: relative;
   height: 568px;
   width: 100%;
-  background-color: $_background_color;
-  background-image: url('../img/home/Background image 1.jpg');
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 0.18%,
+      rgba(0, 0, 0, 0.9) 99.84%
+    ),
+    url('../img/home/Background image 1.jpg') lightgray 50% / cover no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: stretch;
@@ -18,27 +23,28 @@
 
 /* Контейнер для тексту */
 .text-container {
+  margin-top: 76px;
   text-align: center;
   color: var(--White, #fff);
+  width: 288px;
+  height: auto;
+  text-align: left;
 }
 
 /* Основний заголовок */
 .main-text {
   position: relative;
   display: inline-block;
-  margin-bottom: 16px;
-  margin-top: 92px;
+  margin-bottom: 8px;
+  height: 76px;
 
   .white-text {
     position: absolute;
     top: 0;
     left: 0;
-    width: 287.034px;
-    color: var(--White, #fff);
   }
 
   .red-text {
-    width: 287.034px;
     color: #282828;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: var(--Red, #fe453d);
@@ -47,14 +53,18 @@
 
 /* Текст під заголовком */
 .description-text p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
   align-self: stretch;
-  color: var(--White, #fff);
 }
 
 /* Контейнер для зображення між текстом та кнопкою */
-.image-between-text-and-button img {
+.image-between-text-and-button {
   width: 284px;
   height: 294px;
+
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -62,49 +72,61 @@
   box-shadow: none;
 }
 
-/* Кнопка */
+/* Контейнер для кнопки */
 .cta-button-container {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
+  height: 40px;
+  box-shadow: 0px 4px 1px 0px #d85931;
+  position: relative;
+}
 
-  .cta-button {
-    position: relative;
-    display: inline-flex;
-    height: 40px;
-    align-items: center;
-    padding: 0 16px;
-    font-family: Rubik;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--White, #fff);
+/* Прямокутники */
+.left-rectangle,
+.right-rectangle {
+  width: 16px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 1px 0px #d85931;
-    z-index: 2; /* Гарантуємо, що кнопка над псевдоелементами */
+.left-rectangle {
+  margin-right: -2px; /* Зменшуємо відстань для безшовного вигляду */
+}
 
-    /* Прямокутники */
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      width: 40px; /* Ширина прямокутника */
-      height: 40px; /* Висота прямокутника */
-      background-size: contain;
-      background-repeat: no-repeat;
-      top: 0;
-      z-index: 1; /* Прямокутники залишаються під кнопкою */
-    }
+.right-rectangle {
+  margin-left: -2px;
+}
 
-    &::before {
-      left: -50px; /* Відстань до кнопки */
-      background-image: url('../img/home/Rectangle 22.svg');
-    }
+/* Кнопка */
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 16px;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--White, #fff);
+  background: var(
+    --gradient-Orange,
+    linear-gradient(
+      180deg,
+      #ffd07d 0%,
+      #fab439 29.5%,
+      #ec8d0d 66.5%,
+      #e37b18 99%
+    )
+  );
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-    &::after {
-      right: -50px; /* Відстань до кнопки */
-      background-image: url('../img/home/Rectangle 21.svg');
-    }
+  &:hover {
+    transform: scale(1.05); /* Анімація при наведенні */
+    box-shadow: 0px 6px 2px 0px #d85931;
   }
 }
