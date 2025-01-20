@@ -79,6 +79,12 @@
   height: 40px;
   box-shadow: 0px 4px 1px 0px #d85931;
   position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05); /* Анімація при наведенні */
+    box-shadow: 0px 6px 2px 0px #d85931;
+  }
 }
 
 /* Прямокутники */
@@ -123,10 +129,4 @@
   );
   border: none;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: scale(1.05); /* Анімація при наведенні */
-    box-shadow: 0px 6px 2px 0px #d85931;
-  }
 }
