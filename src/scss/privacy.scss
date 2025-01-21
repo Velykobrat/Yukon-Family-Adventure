@@ -1,0 +1,54 @@
+/* Хедер */
+.header-content {
+  display: flex;
+  height: 64px;
+  padding: 0 16px;
+  flex-direction: row;
+  justify-content: space-between; /* Розташування кнопки зліва, а іконки справа */
+  align-items: center;
+  background: rgba(40, 40, 40, 0.3);
+}
+
+/* Кнопка Go Back */
+.cta-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--White, #fff);
+  background: var(
+    --gradient-Orange,
+    linear-gradient(
+      180deg,
+      #ffd07d 0%,
+      #fab439 29.5%,
+      #ec8d0d 66.5%,
+      #e37b18 99%
+    )
+  );
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Логотип */
+.header-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: url('./img/Logo.png') lightgray 50% / cover no-repeat;
+}
+
+.privacy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  width: 288px;
+  margin-top: 42px;
+  padding: 0 16px;
+}
