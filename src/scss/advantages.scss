@@ -1,6 +1,10 @@
 .advantages-container {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 17px;
+
+  background: url(../img/advantages/background.png);
+  background-size: cover;
+  background-position: 60%;
 }
 
 .text-advantages-header {
@@ -29,62 +33,96 @@
 
   gap: 16px;
 }
-.list-advantages-2 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  gap: 16px;
-}
-
-.lists-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-  gap: 16px;
-}
-
-.list-advantages li:nth-child(1),
-.list-advantages-2 li:nth-child(1) {
-  grid-row: span 1;
-}
-
-.list-advantages li:nth-child(2),
-.list-advantages-2 li:nth-child(2) {
-  grid-row: span 1;
-}
 
 .advantages-li {
   padding: 16px;
   display: flex;
+
   background-color: rgb(36, 42, 55);
-  border-radius: 8px;
+  border-radius: 24px;
   /* dark theme dies */
   box-shadow: inset 0px 2px 4px 0px rgba(255, 255, 255, 0.1),
     inset 0px -2px 4px 0px rgba(255, 255, 255, 0.16);
+  background: rgb(33, 40, 53);
+}
+
+.advantages-li:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .advantages-header {
   color: var(--White, #fff);
-  font-family: Rubik, sans-serif;
-  font-weight: 900;
+  font-family: Rubik One, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 8px;
 }
-.advantages-content {
+.advantages-header-2 {
+  width: 236px;
+}
+
+.advantages-header-1 {
   width: 164px;
 }
 
+.advantages-content {
+  width: 164px;
+}
+.advantages-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.advantages-description-2 {
+  width: 194px;
+}
+.advantages-description-1 {
+  width: 164px;
+}
+.advantages-content-1 {
+  margin-left: 92px;
+}
+.advantages-content-2 {
+  margin-right: 94px;
+}
+.advantages-content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.img-container-advantages {
+  position: absolute;
+}
+
 .img-advantages {
+  position: relative;
+
   width: 107px;
   height: 105px;
 }
-.advantages-image {
-  position: relative;
-  width: 288px;
-  height: 288px;
+
+.img-advantages-rubin {
+  right: 26px;
+  bottom: 5px;
+}
+
+.img-advantages-star {
+  width: 101px;
+  height: 105px;
+  top: 16px;
+  left: 32px;
+}
+.img-advantages-gift {
+  right: 26px;
+  bottom: 5px;
+}
+.img-advantages-heart {
+  width: 101px;
+  height: 105px;
+  top: 16px;
+  left: 32px;
 }
 .house {
   position: absolute;
