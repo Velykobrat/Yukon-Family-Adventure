@@ -45,23 +45,26 @@
   text-align: left;
 }
 
+/* Посилання */
 .footer-nav-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  line-height: 20px;
+  color: var(--White, #fff);
+  font-family: 'Roboto Flex';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
   transition: color 0.2s ease;
-
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-  }
 }
 
 /* Текстові блоки */
 .footer-text {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 12px;
-  line-height: 18px;
+  color: var(--White, #fff);
+  font-family: 'Roboto Flex';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
   margin: 0;
   text-align: left;
 }
