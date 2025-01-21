@@ -1,0 +1,71 @@
+<div class="container testimonials-container">
+  <h2 class="text-testimonials-header">
+    <div class="text-testimonials-background">Testimonials</div>
+  </h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../img/testimonials/family.png" />
+        <div class="rating">+++++ 5.0</div>
+        <h3 class="username">FamilyGamer:</h3>
+        <p class="game-description">
+          "It’s fun for the whole family! My kids love helping manage the
+          tasks."
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/testimonials/nature.png" />
+        <div class="rating">+++++ 5.0</div>
+        <h3 class="username">NatureLover23</h3>
+        <p class="game-description">
+          "An unforgettable journey into the wild! The family dynamic is so
+          refreshing."
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/testimonials/explorer.png" />
+        <div class="rating">+++++ 5.0</div>
+        <h3 class="username">Explorer4Life:</h3>
+        <p class="game-description">
+          "The changing seasons are breathtaking. Every day in the game feels
+          like a new challenge."
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/testimonials/cabin.png" />
+        <div class="rating">+++++ 5.0</div>
+        <h3 class="username">CabinCrafter:</h3>
+        <p class="game-description">
+          "I loved building and customizing my homestead. A truly satisfying
+          experience!"
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/testimonials/farmer.png" />
+        <div class="rating">+++++ 5.0</div>
+        <h3 class="username">Farmer:</h3>
+        <p class="game-description">
+          "It's a thrilling adventure that will help you have a good time."
+        </p>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+</script>
