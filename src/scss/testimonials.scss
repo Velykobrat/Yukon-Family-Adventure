@@ -24,7 +24,7 @@
     0px 7px 12px 7px rgba(0, 0, 0, 0.15);
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,11 +38,14 @@
     inset 0px -2px 4px 0px rgba(255, 255, 255, 0.16);
   background: rgb(33, 40, 53);
 }
-
+.mySwiper .swiper-slide {
+  height: 312px;
+}
 .game-description {
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  font-family: Inter;
+  line-height: 130%;
   letter-spacing: 0%;
   width: 256px;
   margin-bottom: 16px;
@@ -53,21 +56,41 @@
   margin-top: 16px;
   margin-bottom: 12px;
 }
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  bottom: 26px;
-  right: 140px !important;
-  left: auto;
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 310px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 }
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  left: 140px !important;
-  right: auto;
+.mySwiper .swiper-button-next::before,
+.mySwiper .swiper-button-prev::before {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 310px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 }
-
+.mySwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+.nav-bullets {
+  margin-top: 40.5px;
+}
 .username {
-  margin-bottom: 12px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
 }
 .rating {
-  margin-bottom: 4px;
+  font-family: Roboto Flex;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0em;
 }
