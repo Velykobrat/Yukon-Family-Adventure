@@ -9,16 +9,55 @@
   background: var(--Die-color-dark-theme, rgba(255, 255, 255, 0.08));
   color: $_white;
   position: fixed;
-  top: 0;
+  top: 0%;
   left: 0;
   z-index: 100;
-  justify-content: space-between;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+}
+
+/* Стилі для головного меню */
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav-list {
+  display: flex;
+
+  gap: 32px;
+}
+
+/* Стилі для посилань в меню */
+.header-nav-link {
+  text-decoration: none;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 4px;
+  transition: color 0.3s ease;
+}
+
+/* Ховер-ефект для посилань */
+.header-nav-link:hover {
+  color: var(
+    --AccentColor,
+    #ff6347
+  ); /* Змінюємо колір на червоний (можна замінити на будь-який акцентний колір) */
+}
+
+/* Стилі для активних посилань */
+.header-nav-link.active {
+  color: var(
+    --PrimaryColor,
+    #3498db
+  ); /* Активний колір для посилання (синій, можна змінити) */
 }
 
 /* Логотип */
