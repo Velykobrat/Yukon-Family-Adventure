@@ -120,6 +120,10 @@
   background: rgb(8, 8, 9);
   z-index: 0;
 }
+.visually-hidden {
+  visibility: hidden;
+  display: none;
+}
 
 @media screen and (min-width: 1200px) {
   .futures-container {
@@ -168,6 +172,7 @@
       inset 0px -2px 4px 0px rgba(255, 255, 255, 0.16);
     /* shadow/Dark blue */
     background: rgb(36, 42, 55);
+    z-index: 10;
   }
 
   .list-features li:nth-child(4) {
@@ -259,6 +264,35 @@
     z-index: 3;
   }
 
+  .footage-container-2 {
+    position: relative;
+    width: 500px;
+    height: 16px;
+  }
+
+  .footage-container-2 img {
+    position: absolute;
+
+    object-fit: cover;
+  }
+
+  .girl {
+    width: 798px;
+    height: 798px;
+    z-index: 1;
+    top: -1660px;
+    left: 143%;
+  }
+
+  .leaves-2 {
+    top: -925px;
+    left: 140%;
+    transform: rotate(0deg);
+    max-width: 490px;
+    height: 263.12;
+    z-index: 2;
+  }
+
   .ellipse-shadow-features {
     position: absolute;
     width: 315px;
@@ -268,5 +302,10 @@
     filter: blur(20.96px);
     background: rgb(8, 8, 9);
     z-index: 0;
+  }
+
+  .visually-hidden {
+    visibility: visible;
+    display: block;
   }
 }

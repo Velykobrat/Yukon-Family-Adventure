@@ -70,6 +70,7 @@
   .about-container {
     width: 1199.99px;
     align-items: center;
+    padding-top: 80px;
   }
   .text-about-header {
     color: var(--White, #fff);
@@ -106,6 +107,7 @@
       inset 0px -2px 4px 0px rgba(255, 255, 255, 0.16);
     /* shadow/Dark blue */
     background: rgb(36, 42, 55);
+    margin-bottom: 80px;
 
     .game {
       padding-left: 12px;
