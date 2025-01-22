@@ -120,3 +120,192 @@
   background: rgb(8, 8, 9);
   z-index: 0;
 }
+.visually-hidden {
+  visibility: hidden;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .futures-container {
+    width: 1199.99px;
+    align-items: center;
+  }
+  .text-features-header {
+    color: var(--White, #fff);
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-shadow: 0px 1px 0px rgb(17, 18, 20);
+    word-break: normal;
+  }
+  .text-features-background {
+    background-color: var(--green, #31d15b);
+    padding: 6px 12px 7px 12px;
+    width: 353px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+      0px 7px 12px 7px rgba(0, 0, 0, 0.15);
+  }
+
+  .list-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 равные колонки */
+    grid-template-rows: auto auto; /* Две строки */
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    gap: 24px;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 356px;
+    height: 322px;
+
+    background-color: rgb(36, 42, 55);
+    border-radius: 8px;
+    /* Dimensional die */
+    box-shadow: inset 0px 2px 4px 0px rgba(255, 255, 255, 0.1),
+      inset 0px -2px 4px 0px rgba(255, 255, 255, 0.16);
+    /* shadow/Dark blue */
+    background: rgb(36, 42, 55);
+    z-index: 10;
+  }
+
+  .list-features li:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .list-features li:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .feature-header {
+    color: var(--White, #fff);
+    font-family: Rubik One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  .img-container {
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid rgb(54, 60, 73);
+    border-radius: 8px;
+    /* Shadow dark theme */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+      0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+    align-items: flex-end;
+  }
+
+  .img-feature {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border: 4px solid rgb(54, 60, 73);
+    border-radius: 4px;
+  }
+
+  .feature-description {
+    font-family: Roboto Flex;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    margin-bottom: 16px;
+  }
+  .second-elem {
+    margin-bottom: 42px;
+  }
+
+  .footage-container {
+    position: relative;
+    width: 200px;
+    height: 16px;
+  }
+
+  .footage-container img {
+    position: absolute;
+
+    object-fit: cover;
+  }
+
+  .bear {
+    width: 430px;
+    height: 430px;
+    z-index: 1;
+    top: -400px;
+    left: 40%;
+  }
+
+  .leaves {
+    top: -225px;
+    left: -5%;
+    transform: rotate(-166.78deg);
+    max-width: 360px;
+    height: 263.12;
+    z-index: 2;
+  }
+
+  .sheep {
+    width: 338px;
+    height: 338px;
+    left: 70px;
+    top: -290px;
+    z-index: 3;
+  }
+
+  .footage-container-2 {
+    position: relative;
+    width: 500px;
+    height: 16px;
+  }
+
+  .footage-container-2 img {
+    position: absolute;
+
+    object-fit: cover;
+  }
+
+  .girl {
+    width: 798px;
+    height: 798px;
+    z-index: 1;
+    top: -1660px;
+    left: 143%;
+  }
+
+  .leaves-2 {
+    top: -925px;
+    left: 140%;
+    transform: rotate(0deg);
+    max-width: 490px;
+    height: 263.12;
+    z-index: 2;
+  }
+
+  .ellipse-shadow-features {
+    position: absolute;
+    width: 315px;
+    height: 125px;
+    left: 20.21px;
+    top: -100.41px;
+    filter: blur(20.96px);
+    background: rgb(8, 8, 9);
+    z-index: 0;
+  }
+
+  .visually-hidden {
+    visibility: visible;
+    display: block;
+  }
+}
