@@ -4,20 +4,40 @@
   height: 64px;
   padding: 0 16px;
   flex-direction: row;
-  justify-content: space-between; /* Розташування кнопки зліва, а іконки справа */
+  justify-content: space-between;
   align-items: center;
   background: rgba(40, 40, 40, 0.3);
+}
+
+/* Контейнер для кнопки */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 1px 0px #d85931;
+  border-radius: 8px;
+  z-index: 10;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Посилання кнопки */
+.cta-link {
+  text-decoration: none;
 }
 
 /* Кнопка Go Back */
 .cta-button {
   display: flex;
+  height: 40px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  justify-content: center;
   align-items: center;
-  padding: 8px 16px;
-  font-family: 'Rubik', sans-serif;
+  gap: 8px;
+  color: var(--White, #fff);
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: var(--White, #fff);
   background: var(
     --gradient-Orange,
     linear-gradient(
@@ -29,9 +49,20 @@
     )
   );
   border: none;
-  border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Ефект при наведенні */
+.cta-button:hover {
+  background-color: #e37b18;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 3px 0px #b84e29;
+}
+
+/* Ефект при натисканні */
+.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0px 4px 1px 0px #d85931;
 }
 
 /* Логотип */
@@ -42,6 +73,7 @@
   background: url('./img/Logo.png') lightgray 50% / cover no-repeat;
 }
 
+/* Секція конфіденційності */
 .privacy-section {
   display: flex;
   flex-direction: column;
@@ -51,18 +83,14 @@
   width: 288px;
   margin-top: 42px;
   margin-bottom: 58px;
-  padding: 0 0;
+  padding: 0;
 }
 
+/* Список конфіденційності */
 .privacy-list {
-  padding-left: 25px; /* Відступ для списку */
-  list-style-type: disc; /* Тип маркерів — точки */
-  color: rgba(
-    0,
-    0,
-    0,
-    0.87
-  ); /* Текст списку того ж кольору, що й основний текст */
+  padding-left: 25px;
+  list-style-type: disc;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .privacy-list li {

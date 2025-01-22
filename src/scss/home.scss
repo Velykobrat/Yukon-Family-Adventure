@@ -89,8 +89,8 @@
   height: 40px;
   position: absolute;
   box-shadow: 0px 4px 1px 0px #d85931;
-  border-radius: 8px; /* Відповідає закругленню кнопки */
-  z-index: 10; /* Щоб контейнер був поверх інших елементів */
+  border-radius: 8px;
+  z-index: 10;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-top: 412px;
 }
@@ -99,30 +99,12 @@
   transform: scale(1.05); /* Анімація при наведенні */
 }
 
-/* Прямокутники */
-.left-rectangle,
-.right-rectangle {
-  width: 16px;
-  height: 40px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-rectangle {
-  margin-right: -2px; /* Зменшуємо відстань для безшовного вигляду */
-}
-
-.right-rectangle {
-  margin-left: -2px;
-}
-
 /* Кнопка */
 .cta-button {
   display: flex;
   height: 40px;
-  padding: 8px;
+  padding: 8px 24px;
+  border-radius: 8px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -142,5 +124,4 @@
   );
   border: none;
   cursor: pointer;
-  z-index: 1; /* Щоб кнопка була поверх прямокутників */
 }
