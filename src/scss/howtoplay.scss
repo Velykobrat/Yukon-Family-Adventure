@@ -91,3 +91,124 @@
   background: rgb(8, 8, 9);
   z-index: 0;
 }
+@media screen and (min-width: 1200px) {
+  .howtoplay-container {
+    width: 1199.99px;
+    align-items: center;
+  }
+
+  .howtoplay-container {
+    padding-top: 80px;
+  }
+  .text-howtoplay-header {
+    color: var(--White, #fff);
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-shadow: 0px 1px 0px rgb(17, 18, 20);
+  }
+  .text-howtoplay-background {
+    background-color: var(--purple, #5f5de9);
+    padding: 6px 12px 7px 12px;
+    width: 266px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+      0px 7px 12px 7px rgba(0, 0, 0, 0.15);
+  }
+
+  .list-howtoplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    column-gap: 24px;
+    row-gap: 0px;
+  }
+  .list-howtoplay li:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .list-howtoplay li:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .howtoplay-li {
+    padding: 16px;
+    width: 359px;
+    height: 250px;
+    background-color: rgb(36, 42, 55);
+    border-radius: 8px;
+    /* dark theme dies */
+    box-shadow: inset 0px 2px 4px 0px rgba(255, 255, 255, 0.1),
+      inset 0px -2px 4px 0px rgba(255, 255, 255, 0.16);
+  }
+  .howtoplay-li-3 {
+    height: 275px;
+  }
+
+  .howtoplay-header {
+    color: var(--White, #fff);
+    font-family: Rubik One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .img-container-howtoplay {
+    height: 128px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+      0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 8px;
+  }
+
+  .howtoplay-description {
+    font-family: Roboto Flex;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .img-howtoplay {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border: 4px solid rgb(54, 60, 73);
+    border-radius: 8px;
+    /* shadow dark theme */
+  }
+
+  .howtoplay-image {
+    display: flex;
+    position: absolute;
+    width: 387px;
+    height: 387px;
+  }
+  .howtoplay-image .house-2 {
+    position: absolute;
+    width: 387px;
+    height: 387px;
+    top: -375px;
+    left: 370px;
+    z-index: 5;
+  }
+
+  .ellipse-shadow {
+    position: absolute;
+    width: 421px;
+    height: 125px;
+    left: 350px;
+    top: -100px;
+    filter: blur(30px);
+    background: rgb(8, 8, 9);
+    z-index: 0;
+  }
+}
