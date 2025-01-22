@@ -123,5 +123,48 @@
     )
   );
   border: none;
-  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .home-section {
+    height: 832px;
+  }
+  .text-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+  /* Основний заголовок */
+  .main-text {
+    position: relative;
+    display: inline-block;
+
+    width: 594px;
+    height: 132px;
+  }
+
+  .white-text {
+    position: absolute;
+    font-size: 60px;
+    top: -1px; /* Зсув угору */
+    left: 1px; /* Зсув вправо */
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  .red-text {
+    font-size: 60px;
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: var(--Red, #fe453d);
+  }
+
+  /* Текст під заголовком */
+  .description-text p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    font-size: 24px;
+    width: 596px;
+  }
 }
