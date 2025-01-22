@@ -1,0 +1,73 @@
+.gallery-container {
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+
+.text-gallery-header {
+  color: var(--White, #fff);
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  text-shadow: 0px 1px 0px rgb(17, 18, 20);
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.text-gallery-background {
+  background-color: var(--red, #fe453d);
+  padding: 6px 12px 7px 12px;
+  width: 117px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+    0px 7px 12px 7px rgba(0, 0, 0, 0.15);
+}
+
+.mySwiper-gallery .swiper-slide-gallery {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 42, 55);
+  border-radius: 24px;
+  border: 6px solid rgb(54, 60, 73);
+  /* dark theme dies */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+    0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+  background: rgb(33, 40, 53);
+}
+.mySwiper-gallery .swiper-slide-gallery {
+  height: 276px;
+  max-width: 276.6px;
+}
+
+.mySwiper-gallery .gallery-image {
+  padding: 0;
+  margin: 0;
+  width: 277px;
+  height: 277px;
+  border-radius: 18px;
+}
+.mySwiper-gallery .swiper-button-next-gallery::after,
+.mySwiper-gallery .swiper-button-prev-gallery::after {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 305px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+}
+.mySwiper-gallery .swiper-button-next-gallery::before,
+.mySwiper-gallery .swiper-button-prev::before {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 305px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+}
+.mySwiper-gallery .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+.nav-bullets {
+  margin-top: 60.5px;
+}
