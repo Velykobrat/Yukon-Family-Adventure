@@ -16,7 +16,7 @@
 }
 
 .text-testimonials-background {
-  background-color: var(--fuchsia, #c15af5);
+  background-color: var(--blue, #0b84ff);
   padding: 6px 12px 7px 12px;
   width: 192px;
   border-radius: 16px;
@@ -35,7 +35,7 @@
   border-radius: 24px;
   /* dark theme dies */
   box-shadow: inset 0px 2px 4px 0px rgba(255, 255, 255, 0.1),
-    inset 0px -2px 4px 0px rgba(255, 255, 255, 0.16);
+    inset 0px -2px 4px 0px rgba(255, 255, 255, 0.15);
   background: rgb(33, 40, 53);
 }
 .mySwiper .swiper-slide {
@@ -56,19 +56,19 @@
   margin-top: 16px;
   margin-bottom: 12px;
 }
-.mySwiper .swiper-button-next::after,
-.mySwiper .swiper-button-prev::after {
+.mySwiper .swiper-button-next-testimonials::after,
+.mySwiper .swiper-button-prev-testimonials::after {
   color: #fff;
-  font-size: 16px;
-  padding-top: 310px;
+  font-size: 20px;
+  padding-top: 330px;
   // padding-left: 20px;
   // padding-right: 20px;
 }
-.mySwiper .swiper-button-next::before,
-.mySwiper .swiper-button-prev::before {
+.mySwiper .swiper-button-next-testimonials::before,
+.mySwiper .swiper-button-prev-testimonials::before {
   color: #fff;
-  font-size: 16px;
-  padding-top: 310px;
+  font-size: 20px;
+  padding-top: 330px;
   // padding-left: 20px;
   // padding-right: 20px;
 }
@@ -77,7 +77,7 @@
   height: 10px;
   background-color: #fff;
 }
-.nav-bullets {
+.nav-bullets-testimonials {
   margin-top: 40.5px;
 }
 .username {
