@@ -40,18 +40,18 @@
 .main-text {
   position: relative;
   display: inline-block;
+}
 
-  .white-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.white-text {
+  position: absolute;
+  top: -1px; /* Зсув угору */
+  left: 1px; /* Зсув вправо */
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.8);
+}
 
-  .red-text {
-    color: #282828;
-    -webkit-text-stroke-width: 5px;
-    -webkit-text-stroke-color: var(--Red, #fe453d);
-  }
+.red-text {
+  -webkit-text-stroke-width: 6px;
+  -webkit-text-stroke-color: var(--Red, #fe453d);
 }
 
 /* Текст під заголовком */
