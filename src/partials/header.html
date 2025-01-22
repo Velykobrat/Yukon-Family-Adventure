@@ -1,79 +1,60 @@
 <header class="header">
-  <!-- Логотип -->
-  <div class="header-logo-container">
-    <a href="./index.html" aria-label="Home">
-      <img class="header-logo" src="../img/Logo.png" alt="Game logo" />
-    </a>
+  <div class="container">
+    <!-- Логотип з посиланням -->
+    <div class="logo-container">
+      <a href="./index.html" aria-label="Home" class="logo-link">
+        <img class="logo" src="../img/Logo.png" alt="Game logo" />
+      </a>
+    </div>
+
+    <!-- Бургер-меню -->
+    <button class="burger" aria-label="Open Navigation" aria-expanded="false">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+
+    <!-- Мобільне меню -->
+    <div class="menu-mobile container">
+      <div class="menu-content">
+        <div class="menu-header">
+          <img class="menu-logo" src="../img/Logo.png" alt="Game logo" />
+          <button class="menu-close" aria-label="Close Navigation">
+            <img src="../img/X.svg" alt="Close menu" />
+          </button>
+        </div>
+
+        <nav class="menu-nav">
+          <ul class="menu-list">
+            <li><a class="menu-link" href="#about">About the Game</a></li>
+            <li><a class="menu-link" href="#features">Unique Features</a></li>
+            <li><a class="menu-link" href="#howtoplay">How to Play</a></li>
+            <li><a class="menu-link" href="#advantages">Advantages</a></li>
+            <li><a class="menu-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="menu-link" href="#gallery">Gallery</a></li>
+          </ul>
+        </nav>
+
+        <!-- Footer -->
+        <div class="menu-footer">
+          <nav class="menu-footer-nav">
+            <ul class="menu-footer-nav-list">
+              <li>
+                <a href="./privacy.html" class="menu-footer-nav-link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="./terms.html" class="menu-footer-nav-link"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <p class="menu-footer-text">© 2025 coollucktrail.com</p>
+          <p class="menu-footer-text">All rights reserved.</p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- Кнопка для бургер-меню -->
-  <button
-    class="burger-menu"
-    aria-label="Open Navigation"
-    aria-expanded="false"
-  >
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-  </button>
-
-  <!--<ul class="header-nav-list-mobile">-->
-  <!--Кнопка закриття мобільного меню-->
-  <!--<button class="close-menu" aria-label="Close Navigation">
-        <img src="./img/home/Burger menu.svg" alt="Close menu" />
-      </button>
-
-      <li class="header-nav-list-item-mobile">
-        <a class="header-nav-link-mobile" href="#about">About the Game</a>
-      </li>
-      <li class="header-nav-list-item-mobile">
-        <a class="header-nav-link-mobile" href="#features">Unique Features</a>
-      </li>
-      <li class="header-nav-list-item-mobile">
-        <a class="header-nav-link-mobile" href="#howtoplay">How to Play</a>
-      </li>
-      <li class="header-nav-list-item-mobile">
-        <a class="header-nav-link-mobile" href="#advantages">Advantages</a>
-      </li>
-      <li class="header-nav-list-item-mobile">
-        <a class="header-nav-link-mobile" href="#testimonials">Testimonials</a>
-      </li>
-      <li class="header-nav-list-item-mobile">
-        <a class="header-nav-link-mobile" href="#gallery">Gallery</a>
-      </li>
-    </ul>
-  </nav>-->
-
-  <!-- Навігація для десктопу -->
-  <!--<nav class="header-nav" aria-label="Main Navigation">
-    <ul class="header-nav-list">
-      <li>
-        <a href="#home"
-          ><img
-            class="header-logo"
-            src="../img/home/Favicon_500_500.png"
-            alt="logo-game"
-        /></a>
-      </li>
-      <li class="header-nav-list-item">
-        <a class="header-nav-link" href="#about">About the Game</a>
-      </li>
-      <li class="header-nav-list-item">
-        <a class="header-nav-link" href="#features">Unique Features</a>
-      </li>
-
-      <li class="header-nav-list-item">
-        <a class="header-nav-link" href="#howtoplay">How to Play</a>
-      </li>
-      <li class="header-nav-list-item">
-        <a class="header-nav-link" href="#advantages">Advantages</a>
-      </li>
-      <li class="header-nav-list-item">
-        <a class="header-nav-link" href="#testimonials">Testimonials</a>
-      </li>
-      <li class="header-nav-list-item">
-        <a class="header-nav-link" href="#gallery">Gallery</a>
-      </li>
-    </ul>
-  </nav>-->
 </header>

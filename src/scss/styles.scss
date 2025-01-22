@@ -16,6 +16,7 @@
 html {
   scroll-behavior: smooth;
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -40,7 +41,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 60px; /* Встановлюємо значення, яке відповідає висоті нашого хедера */
+  scroll-margin-top: 60px;
 }
 
 h1 {

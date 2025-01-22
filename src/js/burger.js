@@ -1,16 +1,17 @@
-const burgerMenu = document.querySelector('.burger-menu');
-const closeMenuButton = document.querySelector('.close-menu');
-const mobileNav = document.querySelector('.header-nav-mobile');
-const mobileNavList = document.querySelector('.header-nav-list-mobile');
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerButton = document.querySelector('.burger');
+  const closeButton = document.querySelector('.menu-close');
+  const mobileNav = document.querySelector('.menu-mobile');
 
-burgerMenu.addEventListener('click', () => {
-  mobileNav.classList.add('menu-open');
-});
+  // Відкрити меню при натисканні на бургер-кнопку
+  burgerButton.addEventListener('click', () => {
+    mobileNav.classList.add('menu-open');
+    burgerButton.setAttribute('aria-expanded', 'true');
+  });
 
-closeMenuButton.addEventListener('click', () => {
-  mobileNav.classList.remove('menu-open');
-});
-
-mobileNavList.addEventListener('click', () => {
-  mobileNav.classList.remove('menu-open');
+  // Закрити меню при натисканні на кнопку закриття
+  closeButton.addEventListener('click', () => {
+    mobileNav.classList.remove('menu-open');
+    burgerButton.setAttribute('aria-expanded', 'false');
+  });
 });
