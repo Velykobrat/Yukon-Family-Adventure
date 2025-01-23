@@ -1,11 +1,11 @@
 {
-  "name": "yukon-family-advanture",
+  "name": "Yukon-Family-Adventure",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/yukon-family-advanture/",
+    "build": "vite build --base=/Yukon-Family-Adventure/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",
