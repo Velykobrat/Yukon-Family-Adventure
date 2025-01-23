@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/yukon-family-adventure/assets/Favicon_16_16-67b7f84a.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yukon: Family Adventure</title>
+
+    <!-- Підключення шрифтів Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&family=Rubik:wght@400;700&family=Rubik+One:wght@400&family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" crossorigin src="/yukon-family-adventure/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/yukon-family-adventure/assets/styles-3aaf5946.css">
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="header-container container">
+    <!-- Логотип з посиланням -->
+    <div class="logo-container">
+      <a href="./index.html" aria-label="Home" class="logo-link">
+        <img class="logo" src="../img/Logo.png" alt="Game logo" />
+      </a>
+    </div>
+
+    <!-- Головне меню (для екранів від 1200px) -->
+    <nav class="header-nav" aria-label="Main Navigation">
+      <ul class="header-nav-list">
+        <li><a class="header-nav-link" href="#about">About the Game</a></li>
+        <li><a class="header-nav-link" href="#features">Unique Features</a></li>
+        <li><a class="header-nav-link" href="#howtoplay">How to Play</a></li>
+        <li><a class="header-nav-link" href="#advantages">Advantages</a></li>
+        <li>
+          <a class="header-nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li><a class="header-nav-link" href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- Бургер-меню -->
+    <button class="burger" aria-label="Open Navigation" aria-expanded="false">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+
+    <!-- Мобільне меню -->
+    <div class="menu-mobile container">
+      <div class="menu-content">
+        <div class="menu-header">
+          <img class="menu-logo" src="../img/Logo.png" alt="Game logo" />
+          <button class="menu-close" aria-label="Close Navigation">
+            <img src="../img/X.svg" alt="Close menu" />
+          </button>
+        </div>
+
+        <nav class="menu-nav">
+          <ul class="menu-list">
+            <li><a class="menu-link" href="#about">About the Game</a></li>
+            <li><a class="menu-link" href="#features">Unique Features</a></li>
+            <li><a class="menu-link" href="#howtoplay">How to Play</a></li>
+            <li><a class="menu-link" href="#advantages">Advantages</a></li>
+            <li><a class="menu-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="menu-link" href="#gallery">Gallery</a></li>
+          </ul>
+        </nav>
+
+        <!-- Footer -->
+        <div class="menu-footer">
+          <nav class="menu-footer-nav">
+            <ul class="menu-footer-nav-list">
+              <li>
+                <a href="./privacy.html" class="menu-footer-nav-link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="./terms.html" class="menu-footer-nav-link"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <p class="menu-footer-text">© 2025 coollucktrail.com</p>
+          <p class="menu-footer-text">All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section id="home" class="home-section container">
+  <div class="text-container">
+    <div class="main-text">
+      <h1 class="white-text">Yukon: Family Adventure</h1>
+      <h1 class="red-text">Yukon: Family Adventure</h1>
+    </div>
+
+    <div class="description-text">
+      <p>
+        Explore. Survive. Rebuild. <br />
+        The Yukon wilderness awaits <br />
+        your story!
+      </p>
+    </div>
+  </div>
+
+  <img
+    class="image-between-text-and-button"
+    src="../img/home/Family image.png"
+    alt="Family"
+  />
+
+  <!-- Контейнер для кнопки -->
+  <div class="cta-button-container">
+    <button class="cta-button">Start Your Adventure Today!</button>
+  </div>
+</section>
+
+    <section id="about" class="about-section">
+  <div class="about-container container">
+    <div class="text-about-container">
+      <h2 class="text-about-header">
+        <div class="text-background">About the Game</div>
+      </h2>
+    </div>
+    <div class="about-content">
+      <div class="image-loading">
+        <img src="../img/about/Loading.png" alt="Yukon" />
+      </div>
+      <div class="info-about">
+        <p>
+          Venture into the breathtaking wilderness of the Yukon with your
+          family. Build your homestead, gather resources, and face the
+          challenges of nature together.
+          <br /><br />
+          Yukon: Family Adventure blends survival, exploration, and storytelling
+          to create a heartwarming and thrilling experience for players of all
+          ages.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="features" class="features-section">
+  <div class="features-container container">
+    <h2 class="text-features-header">
+      <div class="text-features-background">Unique Features</div>
+    </h2>
+
+    <ul class="list-features">
+      <li class="feature">
+        <h3 class="feature-header">Dynamic Seasons:</h3>
+        <p class="feature-description">
+          Experience the beauty and danger of Yukon’s changing seasons, from
+          lush summers to harsh winters.
+        </p>
+        <div class="img-container">
+          <img
+            src="../img/features/feature_1.png"
+            alt="Features img"
+            class="img-feature"
+          />
+        </div>
+      </li>
+      <li class="feature">
+        <h3 class="feature-header">Crafting & Building:</h3>
+        <p class="feature-description second-elem">
+          Construct your dream homestead using materials gathered from the
+          wilderness.
+        </p>
+        <div class="img-container">
+          <img
+            src="../img/features/feature_2.png"
+            alt="Features img"
+            class="img-feature"
+          />
+        </div>
+      </li>
+      <li class="feature">
+        <h3 class="feature-header">Family Bonding Gameplay:</h3>
+        <p class="feature-description">
+          Assign tasks to family members, each with unique skills, to create a
+          stronger, more resilient unit.
+        </p>
+        <div class="img-container">
+          <img
+            src="../img/features/feature_3.png"
+            alt="Features img"
+            class="img-feature"
+          />
+        </div>
+      </li>
+      <li class="feature">
+        <h3 class="feature-header">Wildlife Encounters:</h3>
+        <p class="feature-description">
+          Befriend, observe, or avoid the Yukon’s diverse wildlife, including
+          bears, elk, and wolves.
+        </p>
+        <div class="img-container">
+          <img
+            src="../img/features/feature_4.png"
+            alt="Features img"
+            class="img-feature"
+          />
+        </div>
+      </li>
+      <li class="feature">
+        <h3 class="feature-header">Story-Driven Missions:</h3>
+        <p class="feature-description">
+          Uncover the secrets of your ancestors and fulfill their unfinished
+          journey in the Yukon.
+        </p>
+        <div class="img-container">
+          <img
+            src="../img/features/feature_5.png"
+            alt="Features img"
+            class="img-feature"
+          />
+        </div>
+      </li>
+    </ul>
+    <div class="footage-container">
+      <div>
+        <img src="../img/features/bear.png" alt="Image 1" class="bear" />
+      </div>
+      <div>
+        <img src="../img/features/leaves.png" alt="Image 2" class="leaves" />
+      </div>
+      <div>
+        <img src="../img/features/sheep.png" alt="Image 3" class="sheep" />
+      </div>
+      <div class="ellipse-shadow-features"></div>
+    </div>
+
+
+    <div class="footage-container-2 visually-hidden">
+        <img src="../img/features/girl.png" alt="girl" class="girl" />
+
+      <div>
+        <img src="../img/features/leaves-2.png" alt="leaves-2" class="leaves-2" />
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="howtoplay" class="howtoplay-section">
+  <div class="howtoplay-container container">
+    <h2 class="text-howtoplay-header">
+      <div class="text-howtoplay-background">How to Play</div>
+    </h2>
+
+    <ul class="list-howtoplay">
+      <li class="howtoplay-li">
+        <h3 class="howtoplay-header">1. Settle in the Yukon</h3>
+        <div class="img-container-howtoplay">
+          <img
+            src="../img/howtoplay/play_1.png"
+            alt="Features img"
+            class="img-howtoplay"
+          />
+        </div>
+        <p class="howtoplay-description">
+          Start with a small cabin and expand your homestead.
+        </p>
+      </li>
+      <li class="howtoplay-li">
+        <h3 class="howtoplay-header">2. Gather Resources:</h3>
+        <div class="img-container-howtoplay">
+          <img
+            src="../img/howtoplay/play_2.png"
+            alt="howtoplay img"
+            class="img-howtoplay"
+          />
+        </div>
+        <p class="howtoplay-description">
+          Gather Resources: Hunt, fish, and forage to keep your family fed and
+          thriving..
+        </p>
+      </li>
+      <li class="howtoplay-li howtoplay-li-3">
+        <h3 class="howtoplay-header">3. Complete Family Quests:</h3>
+        <div class="img-container-howtoplay">
+          <img
+            src="../img/howtoplay/play_3.png"
+            alt="howtoplay img"
+            class="img-howtoplay"
+          />
+        </div>
+        <p class="howtoplay-description">
+          Strengthen family bonds by working together to overcome obstacles and
+          fulfill story-driven missions.
+        </p>
+      </li>
+      <li class="howtoplay-li">
+        <h3 class="howtoplay-header">4. Build & Craft:</h3>
+        <div class="img-container-howtoplay">
+          <img
+            src="../img/howtoplay/play_4.png"
+            alt="howtoplay img"
+            class="img-howtoplay"
+          />
+        </div>
+        <p class="howtoplay-description">
+          Create tools, furniture, and facilities to improve your living
+          conditions.
+        </p>
+      </li>
+      <li class="howtoplay-li">
+        <h3 class="howtoplay-header">5. Explore the Wilderness:</h3>
+        <div class="img-container-howtoplay">
+          <img
+            src="../img/howtoplay/play_5.png"
+            alt="howtoplay img"
+            class="img-howtoplay"
+          />
+        </div>
+        <p class="howtoplay-description">
+          Unlock new areas, discover hidden treasures, and face natural
+          challenges.
+        </p>
+      </li>
+    </ul>
+
+
+    <div class="howtoplay-image">
+<div>
+      <img src="../img/howtoplay/house.png" alt="Image 1" class="house house-2" /></div>
+<div class="ellipse-shadow">
+  </div></div>
+</section>
+
+    <section id="advantages" class="advantages-section">
+  <div class="advantages-container container">
+    <h2 class="text-advantages-header">
+      <div class="text-advantages-background">Advantages</div>
+    </h2>
+    <p class="hidden-p visually-hidden">Why Choose Yukon: Family Adventure?</p>
+
+    <ul class="list-advantages">
+      <li class="advantages-li">
+        <div class="img-container-advantages">
+          <img
+            src="../img/advantages/rubin.png"
+            alt="Features img"
+            class="img-advantages img-advantages-rubin"
+          />
+        </div>
+        <div class="advantages-content advantages-content-1">
+          <h3 class="advantages-header advantages-header-1">
+            Heartwarming Family Dynamics:
+          </h3>
+          <p class="advantages-description advantages-description-1">
+            A game that celebrates cooperation and teamwork.
+          </p>
+        </div>
+      </li>
+
+      <li class="advantages-li">
+        <div class="advantages-content advantages-content-2">
+          <h3 class="advantages-header advantages-header-2">
+            Immersive Survival Gameplay:
+          </h3>
+          <p class="advantages-description advantages-description-2">
+            Balancing resource management, exploration, and storytelling.
+          </p>
+        </div>
+        <div class="img-container-advantages">
+          <img
+            src="../img/advantages/star.png"
+            alt="advantages img"
+            class="img-advantages img-advantages-star"
+          />
+        </div>
+      </li>
+
+      <li class="advantages-li advantages-li-gift">
+        <div class="img-container-advantages">
+          <img
+            src="../img/advantages/gift.png"
+            alt="advantages img"
+            class="img-advantages img-advantages-gift"
+          />
+        </div>
+        <div class="advantages-content advantages-content-1">
+          <h3 class="advantages-header advantages-header-1">
+            Tailored for All Players:
+          </h3>
+          <p class="advantages-description advantages-description-1">
+            Whether you’re a seasoned gamer or a newcomer, there’s something for
+            everyone.
+          </p>
+        </div>
+      </li>
+
+      <li class="advantages-li">
+        <div class="advantages-content advantages-content-2">
+          <h3 class="advantages-header advantages-header-2">
+            Beautiful Yukon Landscape:
+          </h3>
+          <p class="advantages-description advantages-description-2">
+            Realistic, visually stunning, and rich with natural wonders.
+          </p>
+        </div>
+        <div class="img-container-advantages">
+          <img
+            src="../img/advantages/heart.png"
+            alt="advantages img"
+            class="img-advantages img-advantages-heart"
+          />
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <div id="testimonials" class="container testimonials-container">
+  <h2 class="text-testimonials-header">
+    <div class="text-testimonials-background">Testimonials</div>
+  </h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../img/testimonials/family.png" />
+        <div class="testimonials-content">
+          <h3 class="username">FamilyGamer:</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+
+          <p class="game-description">
+            "It’s fun for the whole family! My kids love helping manage the
+            tasks."
+          </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/testimonials/nature.png" />
+          <div class="testimonials-content">
+          <h3 class="username">NatureLover23</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+
+          <p class="game-description">
+            "An unforgettable journey into the wild! The family dynamic is so
+            refreshing."
+          </p></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/testimonials/explorer.png" />
+          <div class="testimonials-content">
+          <h3 class="username">Explorer4Life:</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+
+          <p class="game-description">
+            "The changing seasons are breathtaking. Every day in the game feels
+            like a new challenge."
+          </p></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/testimonials/cabin.png" />
+          <div class="testimonials-content">
+          <h3 class="username">CabinCrafter:</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+
+          <p class="game-description">
+            "I loved building and customizing my homestead. A truly satisfying
+            experience!"
+          </p></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/testimonials/farmer.png" />
+          <div class="testimonials-content">
+          <h3 class="username">Farmer:</h3>
+          <div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+
+          <p class="game-description">
+            "It's a thrilling adventure that will help you have a good time."
+          </p></div>
+        </div>
+      </div>
+      <div class="nav-bullets nav-bullets-testimonials">
+        <div class="swiper-button-next swiper-button-next-testimonials"></div>
+        <div class="swiper-pagination swiper-pagination-testimonials"></div>
+        <div class="swiper-button-prev swiper-button-prev-testimonials"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      spaceBetween: 24,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</div>
+
+    <div id="gallery" class="container gallery-container">
+  <h2 class="text-gallery-header">
+    <div class="text-gallery-background">Gallery</div>
+  </h2>
+  <div class="swiper mySwiper-gallery">
+    <div class="swiper-wrapper swiper-wrapper-gallery">
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/1.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/2.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/3.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/4.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/5.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/6.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/7.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/8.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/9.png" class="gallery-image" />
+      </div>
+      <div class="swiper-slide swiper-slide-gallery">
+        <img src="../img/gallery/10.png" class="gallery-image" />
+      </div>
+    </div>
+    <div class="nav-bullets nav-bullets-gallery">
+      <div class="swiper-button-next swiper-button-next-gallery"></div>
+      <div class="swiper-pagination swiper-pagination-gallery"></div>
+      <div class="swiper-button-prev swiper-button-prev-gallery"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper('.mySwiper-gallery', {
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+</script>
+
+    <footer class="footer">
+  <div class="divider"></div>
+  <div class="footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a href="./privacy.html" class="footer-nav-link">Privacy Policy</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="./terms.html" class="footer-nav-link">Terms & Conditions</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2025 coollucktrail.com</p>
+    <p class="footer-text">All rights reserved.</p>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
