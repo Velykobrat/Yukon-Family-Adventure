@@ -1,11 +1,13 @@
 /* Загальний стиль футера */
 .footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 40px 0;
   background: var(--Die-color, #212835);
   gap: 8px;
+  flex-direction: column; /* За замовчуванням вертикальний для мобільних */
+  width: 320px;
+  margin: auto;
 }
 
 /* Divider */
@@ -14,35 +16,28 @@
   align-self: stretch;
   border: 1px solid var(--Die-color-dark-theme, rgba(255, 255, 255, 0.08));
   opacity: 0.35;
-  margin-bottom: 8px; /* Відступ до footer-container */
+  margin-bottom: 8px;
 }
 
 /* Контейнер */
 .footer-container {
   display: flex;
+  flex-direction: column; /* Вертикальний для мобільних */
   width: 288px;
-  flex-direction: column;
+  gap: 12px;
   justify-content: center;
   align-items: flex-start;
-  gap: 12px;
 }
 
 /* Список навігації */
-.footer-nav {
-  width: 100%;
-}
-
 .footer-nav-list {
   display: flex;
-  flex-direction: column; /* Список у колонку */
+  flex-direction: column; /* Вертикальний для мобільних */
   gap: 8px;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.footer-nav-item {
-  text-align: left;
+  width: 100%;
 }
 
 /* Посилання */
@@ -51,10 +46,10 @@
   color: var(--White, #fff);
   font-family: 'Roboto Flex';
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   transition: color 0.2s ease;
+  text-align: left;
 }
 
 /* Текстові блоки */
@@ -62,9 +57,44 @@
   color: var(--White, #fff);
   font-family: 'Roboto Flex';
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   margin: 0;
   text-align: left;
+}
+
+/* СТИЛІ ДЛЯ ЕКРАНІВ ВІД 1200px */
+@media screen and (min-width: 1200px) {
+  .footer {
+    gap: 0;
+    width: 1200px;
+    padding-bottom: 40px;
+    padding-top: 110px;
+  }
+
+  .divider {
+    width: 900px;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    width: 1120px;
+  }
+
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 32px;
+    margin-right: 480px;
+  }
+
+  .footer-nav-link {
+    font-size: 18px; /* Більший шрифт */
+    line-height: 140%; /* 25.2px */
+  }
+
+  .footer-text {
+    text-align: right;
+  }
 }
