@@ -6,7 +6,6 @@
   margin: 0 auto;
   height: 64px;
   flex-shrink: 0;
-
   color: $_white;
   position: fixed;
   top: 0;
@@ -50,18 +49,12 @@
 
 /* Ховер-ефект для посилань */
 .header-nav-link:hover {
-  color: var(
-    --AccentColor,
-    #ff6347
-  ); /* Змінюємо колір на червоний (можна замінити на будь-який акцентний колір) */
+  color: var(--AccentColor, #ff6347);
 }
 
 /* Стилі для активних посилань */
 .header-nav-link.active {
-  color: var(
-    --PrimaryColor,
-    #3498db
-  ); /* Активний колір для посилання (синій, можна змінити) */
+  color: var(--PrimaryColor, #3498db);
 }
 
 /* Логотип */
@@ -96,7 +89,7 @@
 .menu-mobile {
   position: absolute;
   top: 0;
-  left: -2500px; /* Ховаємо меню за межами екрана */
+  left: 100%; /* Ховаємо меню за межами екрана */
   right: 0;
   margin: 0 auto;
   max-width: 1200px;
@@ -117,7 +110,6 @@
   left: 0; /* Позиція меню, коли воно відкрите */
 }
 
-/* Контейнер вмісту меню */
 .menu-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -125,7 +117,6 @@
   flex-direction: column;
 }
 
-/* Логотип і кнопка закриття на верхній панелі */
 .menu-header {
   display: flex;
   justify-content: space-between;
@@ -184,7 +175,7 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Контейнер */
+/* ФУТЕР */
 .menu-footer {
   display: flex;
   width: 288px;
@@ -194,7 +185,6 @@
   gap: 12px;
 }
 
-/* Список навігації */
 .menu-footer-nav {
   width: 100%;
 }
@@ -208,7 +198,6 @@
   list-style: none;
 }
 
-/* Посилання */
 .menu-footer-nav-link {
   text-decoration: none;
   color: var(--White, #fff);

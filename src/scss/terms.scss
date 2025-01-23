@@ -1,12 +1,20 @@
-/* Хедер */
+/* Загальний стиль для хедера */
+header {
+  width: 100%;
+}
+
+/* Центральний контейнер */
 .header-content {
+  max-width: 320px; /* Максимальна ширина */
+  margin: 0 auto; /* Вирівнювання по центру */
   display: flex;
   height: 64px;
   padding: 0 16px;
   flex-direction: row;
-  justify-content: space-between; /* Розташування кнопки зліва, а іконки справа */
+  justify-content: space-between;
   align-items: center;
   background: rgba(40, 40, 40, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Контейнер для кнопки */
@@ -120,6 +128,7 @@
   .header-content {
     height: 100px;
     padding: 0 120px;
+    max-width: 1200px;
   }
 
   .header-icon {
