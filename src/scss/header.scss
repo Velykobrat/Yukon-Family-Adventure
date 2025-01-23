@@ -6,7 +6,7 @@
   margin: 0 auto;
   height: 64px;
   flex-shrink: 0;
-  background: var(--Die-color-dark-theme, rgba(255, 255, 255, 0.08));
+
   color: $_white;
   position: fixed;
   top: 0;
@@ -20,6 +20,8 @@
   width: 100%;
   justify-content: space-between;
   margin: 0 auto;
+  background: var(--Die-color-dark-theme, rgba(255, 255, 255, 0.08));
+  padding: 16px 0;
 }
 
 /* Стилі для головного меню */
@@ -92,9 +94,12 @@
 
 /* Мобільне меню */
 .menu-mobile {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 100%;
+  left: -2500px; /* Ховаємо меню за межами екрана */
+  right: 0;
+  margin: 0 auto;
+  max-width: 1200px;
   width: 100%;
   height: 568px;
   background: var(--Background-color, #111826);
@@ -104,14 +109,12 @@
   transition: left 0.3s ease-in-out;
   display: flex;
   justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 0 16px;
 }
 
 // Відображаємо меню на екрані
 .menu-mobile.menu-open {
-  left: 0%; // Позиціонуємо відносно контейнера
+  left: 0; /* Позиція меню, коли воно відкрите */
 }
 
 /* Контейнер вмісту меню */
