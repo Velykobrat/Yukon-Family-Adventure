@@ -112,3 +112,21 @@
   color: #0056b3;
   text-decoration: underline;
 }
+
+@media screen and (min-width: 1200px) {
+  .header-content {
+    height: 100px;
+    padding: 0 120px;
+  }
+
+  .header-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .privacy-section {
+    width: 930px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
