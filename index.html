@@ -503,8 +503,8 @@
 
   <script>
     var swiper = new Swiper('.mySwiper', {
-  spaceBetween: 24,
-  slidesPerView: 'auto', // Автоматична ширина для слайдів
+  spaceBetween: 27,
+  slidesPerView: 'auto',
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next-testimonials',
@@ -525,63 +525,73 @@
   </script>
 </div>
 
-    <div id="gallery" class="container gallery-container">
-  <h2 class="text-gallery-header">
-    <div class="text-gallery-background">Gallery</div>
-  </h2>
-  <div class="swiper mySwiper-gallery">
-    <div class="swiper-wrapper swiper-wrapper-gallery">
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/1-f1be21a2.png" class="gallery-image" />
+    <section id="gallery" class="gallery-section">
+  <div class="container gallery-container">
+    <h2 class="text-gallery-header">
+      <div class="text-gallery-background">Gallery</div>
+    </h2>
+    <div class="swiper mySwiper-gallery">
+      <div class="swiper-wrapper swiper-wrapper-gallery">
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/1-f1be21a2.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/2-b5f0d512.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/3-6dc96d2a.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/4-f586438a.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/5-c4bb6fbb.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/6-c0930045.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/7-b03f41a7.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/8-9b955c4e.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/9-1c9f484a.png" class="gallery-image" />
+        </div>
+        <div class="swiper-slide swiper-slide-gallery">
+          <img src="/Yukon-Family-Adventure/assets/10-2eeb95b2.png" class="gallery-image" />
+        </div>
       </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/2-b5f0d512.png" class="gallery-image" />
+      <div class="nav-bullets nav-bullets-gallery">
+        <div class="swiper-button-next swiper-button-next-gallery"></div>
+        <div class="swiper-pagination swiper-pagination-gallery"></div>
+        <div class="swiper-button-prev swiper-button-prev-gallery"></div>
       </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/3-6dc96d2a.png" class="gallery-image" />
-      </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/4-f586438a.png" class="gallery-image" />
-      </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/5-c4bb6fbb.png" class="gallery-image" />
-      </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/6-c0930045.png" class="gallery-image" />
-      </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/7-b03f41a7.png" class="gallery-image" />
-      </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/8-9b955c4e.png" class="gallery-image" />
-      </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/9-1c9f484a.png" class="gallery-image" />
-      </div>
-      <div class="swiper-slide swiper-slide-gallery">
-        <img src="/Yukon-Family-Adventure/assets/10-2eeb95b2.png" class="gallery-image" />
-      </div>
-    </div>
-    <div class="nav-bullets nav-bullets-gallery">
-      <div class="swiper-button-next swiper-button-next-gallery"></div>
-      <div class="swiper-pagination swiper-pagination-gallery"></div>
-      <div class="swiper-button-prev swiper-button-prev-gallery"></div>
     </div>
   </div>
-</div>
+</section>
 
 <script>
-  var swiper = new Swiper('.mySwiper-gallery', {
-    spaceBetween: 24,
+  var swiperGallery = new Swiper('.mySwiper-gallery', {
+    spaceBetween: 27,
+    slidesPerView: 'auto',
+    loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next-gallery',
+      prevEl: '.swiper-button-prev-gallery',
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-gallery',
+      clickable: true,
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+      },
+    },
   });
 </script>
 
