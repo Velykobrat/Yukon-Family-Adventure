@@ -88,9 +88,7 @@ header {
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 0 16px;
+  padding: 40px 16px 58px 16px;
 }
 
 .terms-list {
@@ -139,13 +137,11 @@ header {
 
   .terms-section {
     width: 930px;
-    margin-top: 76px;
-    margin-bottom: 80px;
-    padding: 0 0;
+    padding: 76px 0 80px 0;
   }
 
   .cta-button {
     height: 56px;
-    width: 149px;
+    padding: 8px 40px;
   }
 }
