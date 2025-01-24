@@ -1,215 +1,173 @@
 .testimonials-container {
-  padding-top: 40px;
-  padding-bottom: 17px;
-  scroll-margin-top: 60px;
+  padding: 40px 0 17px;
+  width: auto;
 }
 
 .text-testimonials-header {
   color: var(--White, #fff);
-  font-family: var(--font-family);
+  font-family: var(--font-family, Rubik);
   font-size: 28px;
   font-weight: 700;
   line-height: 33px;
-  text-shadow: 0px 1px 0px rgb(17, 18, 20);
-  letter-spacing: 0%;
+  text-shadow: 0 1px 0 rgb(17, 18, 20);
   text-align: left;
   margin-bottom: 24px;
 }
 
 .text-testimonials-background {
   background-color: var(--blue, #0b84ff);
-  padding: 6px 12px 7px 12px;
+  padding: 6px 12px;
   width: 192px;
   border-radius: 16px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
-    0px 7px 12px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 7px 12px rgba(0, 0, 0, 0.15);
 }
 
 .mySwiper .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 288px;
   height: 312px;
-  background-color: rgb(36, 42, 55);
-  border-radius: 24px;
-  /* dark theme dies */
-  box-shadow: inset 0px 2px 4px 0px rgba(255, 255, 255, 0.1),
-    inset 0px -2px 4px 0px rgba(255, 255, 255, 0.15);
   background: rgb(33, 40, 53);
+  border-radius: 24px;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.15);
 }
-.mySwiper .swiper-slide {
-  height: 312px;
+
+.testimonials-content {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
-.game-description {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: Inter;
-  line-height: 130%;
-  letter-spacing: 0%;
-  width: 256px;
-  margin-bottom: 16px;
-}
+
 .swiper-slide img {
   width: 120px;
   height: 120px;
-  margin-top: 16px;
-  margin-bottom: 12px;
+  margin: 16px 0 12px;
 }
+
+.nav-bullets-testimonials {
+  position: relative;
+}
+
 .mySwiper .swiper-button-next-testimonials::after,
 .mySwiper .swiper-button-prev-testimonials::after {
   color: #fff;
+  width: 28px;
+  height: 28px;
   font-size: 20px;
-  padding-top: 330px;
-  // padding-left: 20px;
-  // padding-right: 20px;
+  transform: translate(0, -60%); /* Центрування */
 }
-.mySwiper .swiper-button-next-testimonials::before,
-.mySwiper .swiper-button-prev-testimonials::before {
-  color: #fff;
-  font-size: 20px;
-  padding-top: 330px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-}
+
 .mySwiper .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: #fff;
 }
-.nav-bullets-testimonials {
-  margin-top: 40.5px;
-}
+
 .username {
-  margin-bottom: 0px;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
 }
+
 .rating {
-  font-family: Roboto Flex;
-  margin-bottom: 10px;
-  color: #fff;
+  color: var(--White, #fff);
+  font-family: 'Roboto Flex';
   font-size: 12px;
-  letter-spacing: 0em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 16.8px */
 }
 
-.testimonials-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.game-description {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+  line-height: 130%;
+  width: 256px;
+  margin-bottom: 16px;
 }
 
+/* Desktop-specific styles */
 @media screen and (min-width: 1200px) {
-  .testimonials-section .gallery-container {
+  .testimonials-section {
+    display: flex;
     width: 1200px;
-    align-items: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonials-container {
+    padding: 80px 0 17px;
+    width: auto;
   }
 
   .text-testimonials-header {
-    color: var(--White, #fff);
-    font-family: Rubik;
+    display: inline-flex;
     font-size: 40px;
     font-weight: 700;
-    line-height: 47px;
-    text-shadow: 0px 1px 0px rgb(17, 18, 20);
-    letter-spacing: 0%;
-    text-align: left;
-    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
   }
 
   .text-testimonials-background {
-    background-color: var(--blue, #0b84ff);
-    padding: 6px 12px 7px 12px;
-    width: 277px;
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
-      0px 7px 12px 7px rgba(0, 0, 0, 0.15);
+    width: auto;
   }
 
   .mySwiper .swiper-slide {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
     width: 453px;
-    height: 156px;
-    background-color: rgb(36, 42, 55);
+    padding: 0 16px;
+    height: auto;
+    flex-direction: row;
+    justify-content: left;
+    gap: 8px;
     border-radius: 24px;
-    /* dark theme dies */
-    box-shadow: inset 0px 2px 4px 0px rgba(255, 255, 255, 0.1),
-      inset 0px -2px 4px 0px rgba(255, 255, 255, 0.15);
-    background: rgb(33, 40, 53);
-  }
-  .mySwiper .swiper-slide {
-    height: 122px;
-    max-width: 453px;
+    background: var(--Die-color, #212835);
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    padding-right: 40px;
   }
 
   .testimonials-content {
     display: flex;
+
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 12px;
-    margin-top: 7px;
+    gap: 8px;
   }
-  .game-description {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Inter;
-    line-height: 130%;
-    letter-spacing: 0%;
-    width: 289px;
-    margin-bottom: 16px;
-  }
+
   .swiper-slide img {
     width: 120px;
     height: 120px;
-    margin-top: 16px;
-    margin-bottom: 12px;
+    margin: 0;
   }
+
+  .nav-bullets-testimonials {
+    position: relative;
+    width: 170px;
+    left: 40%;
+  }
+
   .mySwiper .swiper-button-next-testimonials::after,
   .mySwiper .swiper-button-prev-testimonials::after {
     color: #fff;
+    width: 28px;
+    height: 28px;
     font-size: 20px;
-    padding-top: 175px;
-    // padding-left: 20px;
-    // padding-right: 20px;
+    transform: translate(25%, -65%); /* Центрування */
   }
-  .mySwiper .swiper-button-next-testimonials::before,
-  .mySwiper .swiper-button-prev-testimonials::before {
-    color: #fff;
-    font-size: 20px;
-    padding-top: 330px;
-    // padding-left: 20px;
-    // padding-right: 20px;
-  }
+
   .mySwiper .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     background-color: #fff;
-  }
-  .nav-bullets-testimonials {
-    margin-top: 40.5px;
-  }
-  .username {
-    margin-top: 9px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0%;
-  }
-  .rating {
-    font-family: Roboto Flex;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: 0em;
-    padding-top: 4px;
-    padding-bottom: 0;
   }
 }

@@ -70,16 +70,24 @@
 
   <script>
     var swiper = new Swiper('.mySwiper', {
-      spaceBetween: 24,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
+  spaceBetween: 24,
+  slidesPerView: 'auto', // Автоматична ширина для слайдів
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next-testimonials',
+    prevEl: '.swiper-button-prev-testimonials',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
   </script>
 </div>
