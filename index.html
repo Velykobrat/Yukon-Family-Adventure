@@ -18,7 +18,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" crossorigin src="/Yukon-Family-Adventure/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yukon-Family-Adventure/assets/styles-ae451876.css">
+    <link rel="stylesheet" href="/Yukon-Family-Adventure/assets/styles-1187dd4b.css">
   </head>
 
   <body>
@@ -503,17 +503,25 @@
 
   <script>
     var swiper = new Swiper('.mySwiper', {
-      spaceBetween: 24,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
+  spaceBetween: 24,
+  slidesPerView: 'auto', // Автоматична ширина для слайдів
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next-testimonials',
+    prevEl: '.swiper-button-prev-testimonials',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
   </script>
 </div>
 
