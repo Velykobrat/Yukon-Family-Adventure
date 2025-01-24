@@ -5,8 +5,8 @@ header {
 
 /* Центральний контейнер */
 .header-content {
-  max-width: 320px; /* Максимальна ширина */
-  margin: 0 auto; /* Вирівнювання по центру */
+  max-width: 320px;
+  margin: 0 auto;
   display: flex;
   height: 64px;
   padding: 0 16px;
@@ -43,9 +43,11 @@ header {
   align-items: center;
   gap: 8px;
   color: var(--White, #fff);
-  font-family: Rubik, sans-serif;
+  font-family: 'Roboto Flex';
   font-size: 18px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
   background: var(
     --gradient-Orange,
     linear-gradient(
@@ -80,20 +82,19 @@ header {
   background: url('./img/Logo.png') lightgray 50% / cover no-repeat;
 }
 
-/* Секція конфіденційності */
+/* Секція privacy */
 .privacy-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
-  width: 288px;
-  margin-top: 42px;
-  margin-bottom: 58px;
-  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding: 0 16px;
 }
 
-/* Список конфіденційності */
+/* Список privacy */
 .privacy-list {
   padding-left: 25px;
   list-style-type: disc;
@@ -137,5 +138,11 @@ header {
     width: 930px;
     margin-top: 80px;
     margin-bottom: 80px;
+    padding: 0 0;
+  }
+
+  .cta-button {
+    height: 56px;
+    width: 149px;
   }
 }
