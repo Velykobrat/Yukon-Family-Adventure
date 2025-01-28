@@ -46,6 +46,15 @@
   transform: translate(0, -6%);
 }
 
+.mySwiper-gallery .swiper-button-next,
+.mySwiper-gallery .swiper-button-prev {
+  z-index: 10; /* Зробити кнопку поверх */
+}
+
+.mySwiper-gallery .swiper-pagination {
+  z-index: 1; /* Зменшити z-index для пагінації */
+}
+
 .mySwiper-gallery .swiper-button-next::after,
 .mySwiper-gallery .swiper-button-prev::after {
   color: #fff;
@@ -97,7 +106,7 @@
     width: 28px;
     height: 28px;
     font-size: 20px;
-    transform: translate(45%, 20%);
+    transform: translate(40%, 15%);
   }
 
   .nav-bullets {

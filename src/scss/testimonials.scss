@@ -67,6 +67,15 @@
   z-index: 10;
 }
 
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  z-index: 10; /* Робимо кнопки видимими поверх інших елементів */
+}
+
+.mySwiper .swiper-pagination {
+  z-index: 1; /* Трохи зменшуємо z-index пагінації */
+}
+
 .swiper-button-next img,
 .swiper-button-prev img {
   width: 24px;
